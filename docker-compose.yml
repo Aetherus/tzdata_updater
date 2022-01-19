@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        git_repo: git@github.com:Aetherus/tzdata_wrapper.git      
+    volumes:
+      - ~/.ssh:/app/.ssh
